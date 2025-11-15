@@ -2,39 +2,39 @@
 @tailwind components;
 @tailwind utilities;
 
-@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700&family=Open+Sans:wght@300;400;600&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;600;700&family=Caveat:wght@400;600&display=swap");
 
 @layer base {
   :root {
-    --background: 0 0% 100%;
-    --foreground: 220 13% 13%;
+    --background: 270 50% 4%;
+    --foreground: 0 0% 98%;
 
-    --card: 0 0% 100%;
-    --card-foreground: 220 13% 13%;
+    --card: 270 40% 8%;
+    --card-foreground: 0 0% 98%;
 
-    --popover: 0 0% 100%;
-    --popover-foreground: 220 13% 13%;
+    --popover: 270 40% 8%;
+    --popover-foreground: 0 0% 98%;
 
-    --primary: 220 13% 13%;
-    --primary-foreground: 0 0% 100%;
+    --primary: 280 100% 70%;
+    --primary-foreground: 270 50% 4%;
 
-    --secondary: 0 0% 96%;
-    --secondary-foreground: 220 13% 13%;
+    --secondary: 330 100% 65%;
+    --secondary-foreground: 270 50% 4%;
 
-    --muted: 0 0% 96%;
-    --muted-foreground: 220 9% 56%;
+    --muted: 270 30% 15%;
+    --muted-foreground: 0 0% 70%;
 
-    --accent: 220 13% 13%;
-    --accent-foreground: 0 0% 100%;
+    --accent: 45 100% 60%;
+    --accent-foreground: 270 50% 4%;
 
     --destructive: 0 84.2% 60.2%;
     --destructive-foreground: 0 0% 100%;
 
-    --border: 220 13% 91%;
-    --input: 220 13% 91%;
-    --ring: 220 13% 13%;
+    --border: 270 30% 20%;
+    --input: 270 30% 15%;
+    --ring: 280 100% 70%;
 
-    --radius: 0.25rem;
+    --radius: 1rem;
 
     --sidebar-background: 0 0% 98%;
 
@@ -99,7 +99,12 @@
 
   body {
     @apply bg-background text-foreground;
-    font-family: "Open Sans", sans-serif;
+    font-family: "Space Grotesk", sans-serif;
+    background: linear-gradient(
+      135deg,
+      hsl(270, 50%, 4%) 0%,
+      hsl(280, 45%, 8%) 100%
+    );
   }
 
   h1,
@@ -108,6 +113,10 @@
   h4,
   h5,
   h6 {
-    font-family: "Montserrat", sans-serif;
+    font-family: "Space Grotesk", sans-serif;
+  }
+
+  .handwritten {
+    font-family: "Caveat", cursive;
   }
 }
